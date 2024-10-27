@@ -8,6 +8,8 @@
 
 <script setup lang="ts">
 import { variantConfig } from "./config/variant";
+import { useRoute } from "vue-router";
+
 useHead({
   htmlAttrs: {
     lang: variantConfig.siteLangCode[variantConfig.siteVariant].code,
@@ -53,6 +55,10 @@ useHead({
       href: "/assets/fonts/Poppins-Bold.woff",
       crossorigin: "anonymous",
       as: "font",
+    },
+    {
+      rel: "canonical",
+      href: `${variantConfig.siteOrigin}${useRoute().fullPath}`,
     },
   ],
   meta: variantConfig.defaultMetaTags(variantConfig.siteVariant),
