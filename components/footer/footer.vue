@@ -5,13 +5,13 @@
         <li class="social-nav__item">
           <NuxtLink
             class="social-nav__link social-nav__link--cv"
-            to="#"
+            :to="`/assets/pdf/${variantConfig.siteVariant}/cv-manuel-fernandez.pdf`"
             target="_blank"
+            download
             :title="lang.toolTips.icons.resume.title"
             :alt="lang.toolTips.icons.resume.alt"
+            >CV</NuxtLink
           >
-            CV
-          </NuxtLink>
         </li>
         <li class="social-nav__item">
           <NuxtLink
@@ -80,6 +80,7 @@
 </template>
 
 <script lang="ts" setup>
+import { variantConfig } from "~/config/variant";
 const { lang } = useLang();
 </script>
 
