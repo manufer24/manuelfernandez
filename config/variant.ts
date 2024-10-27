@@ -29,8 +29,8 @@ const siteName = {
 };
 
 const siteOrigin = {
-  english: "https://manuelfernandez-us.vercel.app/",
-  spanish: "https://manuelfernandez-es.vercel.app/",
+  english: "https://manuelfernandez-us.vercel.app",
+  spanish: "https://manuelfernandez-es.vercel.app",
 };
 const defaultMetaTags = (variant: typeof processVariant) => [
   {
