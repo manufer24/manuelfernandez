@@ -26,7 +26,9 @@ export default defineNuxtConfig({
       "tailwindcss/nesting": {},
       tailwindcss: {},
       autoprefixer: {},
-      ...(process.env.NODE_ENV === "production" ? { cssnano: {} } : {}),
+      ...(variantConfig.processEnvironment === "production"
+        ? { cssnano: {} }
+        : {}),
     },
   },
 });
