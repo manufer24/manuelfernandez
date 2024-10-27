@@ -2,7 +2,10 @@ import langEnglishVariant from "../lang/english";
 import langSpanishVariant from "../lang/spanish";
 
 const processVariant =
-  (process.env.VARIANT as "english" | "spanish") || "spanish";
+  (process.env.VARIANT as "english" | "spanish") || "english";
+
+const processEnvironment =
+  (process.env.ENVIRONMENT as "development" | "production") || "production";
 
 const siteLanguage = {
   english: {
@@ -21,12 +24,12 @@ const langs = {
 };
 
 const siteName = {
-  english: "Manuel Fernández | Portfolio Web", // TODO: update once uploaded
+  english: "manuelfernandez-us",
   spanish: "Manuel Fernández | Portafolio Web", // TODO: update once uploaded
 };
 
 const siteOrigin = {
-  english: "http://localhost:3000/", // TODO: update once uploaded
+  english: "https://manuelfernandez-us.vercel.app/",
   spanish: "http://localhost:3000/", // TODO: update once uploaded
 };
 const defaultMetaTags = (variant: typeof processVariant) => [
@@ -74,4 +77,5 @@ export const variantConfig = {
   siteLangs: langs,
   siteLangCode: siteLanguage,
   defaultMetaTags,
+  processEnvironment,
 };
