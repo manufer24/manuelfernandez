@@ -8,14 +8,6 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   css: ["~/assets/css/global.pcss"],
   modules: ["@nuxtjs/color-mode", "@nuxt/image"],
-  hooks: {
-    "pages:extend"(pages) {
-      pages.push({
-        path: `/${LANG.routes.projects}/:slug`,
-        file: "~/pages/projects/[slug].vue",
-      });
-    },
-  },
   colorMode: {
     preference: "system",
     classSuffix: "",
@@ -26,9 +18,26 @@ export default defineNuxtConfig({
       "tailwindcss/nesting": {},
       tailwindcss: {},
       autoprefixer: {},
-      ...(variantConfig.processEnvironment === "production"
-        ? { cssnano: {} }
-        : {}),
+      ...(process.env.NODE_ENV === "production" ? { cssnano: {} } : {}),
+    },
+  },
+  hooks: {
+    "pages:extend"(pages) {
+      pages.push({
+        path: `/${LANG.routes.projects}/:slug`,
+        file: "~/pages/projects/[slug].vue",
+      });
+    },
+  },
+  runtimeConfig: {
+    public: {
+      origin: variantConfig.siteOrigin,
+      variant: variantConfig.siteVariant as "english" | "spanish",
+      siteName: variantConfig.siteName,
+      mode: process.env.NODE_ENV,
+      lang: variantConfig.siteLangCode[variantConfig.siteVariant].code,
+      env: process.env.NODE_ENV,
+      processEnvironment: variantConfig.processEnvironment,
     },
   },
 });
