@@ -25,12 +25,12 @@ const langs = {
 
 const siteName = {
   english: "manuelfernandez-us",
-  spanish: "Manuel Fernández | Portafolio Web", // TODO: update once uploaded
+  spanish: "manuelfernandez-us",
 };
 
 const siteOrigin = {
   english: "https://manuelfernandez-us.vercel.app/",
-  spanish: "http://localhost:3000/", // TODO: update once uploaded
+  spanish: "https://manuelfernandez-es.vercel.app/",
 };
 const defaultMetaTags = (variant: typeof processVariant) => [
   {
