@@ -8,12 +8,28 @@
 
 <script setup lang="ts">
 import { variantConfig } from "./config/variant";
-
 useHead({
   htmlAttrs: {
     lang: variantConfig.siteLangCode[variantConfig.siteVariant].code,
   },
   link: [
+    {
+      rel: "icon",
+      type: "image/png",
+      sizes: "32x32",
+      href: "/assets/favicon/favicon-32x32.png",
+    },
+    {
+      rel: "icon",
+      type: "image/png",
+      sizes: "16x16",
+      href: "/assets/favicon/favicon-16x16.png",
+    },
+    {
+      rel: "shortcut icon",
+      type: "image/x-icon",
+      href: "/assets/favicon/favicon.ico",
+    },
     {
       rel: "preload",
       href: "/assets/fonts/Poppins-Regular.woff",
