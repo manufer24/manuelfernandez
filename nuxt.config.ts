@@ -18,9 +18,7 @@ export default defineNuxtConfig({
       "tailwindcss/nesting": {},
       tailwindcss: {},
       autoprefixer: {},
-      ...(process.env.NUXT_ENV_VERCEL_NODE_ENV === "production"
-        ? { cssnano: {} }
-        : {}),
+      ...(process.env.NODE_ENV === "production" ? { cssnano: {} } : {}),
     },
   },
   hooks: {
@@ -36,9 +34,9 @@ export default defineNuxtConfig({
       origin: variantConfig.siteOrigin,
       variant: variantConfig.siteVariant as "english" | "spanish",
       siteName: variantConfig.siteName,
-      mode: process.env.NUXT_ENV_VERCEL_NODE_ENV,
+      mode: process.env.NODE_ENV,
       lang: variantConfig.siteLangCode[variantConfig.siteVariant].code,
-      env: process.env.NUXT_ENV_VERCEL_NODE_ENV,
+      env: process.env.NODE_ENV,
       processEnvironment: variantConfig.processEnvironment,
     },
   },

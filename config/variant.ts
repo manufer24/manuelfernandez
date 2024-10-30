@@ -2,11 +2,10 @@ import langEnglishVariant from "../lang/english";
 import langSpanishVariant from "../lang/spanish";
 
 const processVariant =
-  (process.env.NUXT_ENV_VERCEL_VARIANT as "english" | "spanish") || "english";
+  (process.env.VARIANT as "english" | "spanish") || "english";
 
 const processEnvironment =
-  (process.env.NUXT_ENV_VERCEL_ENVIRONMENT as "development" | "production") ||
-  "production";
+  (process.env.ENVIRONMENT as "development" | "production") || "production";
 
 const siteLanguage = {
   english: {
