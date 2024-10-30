@@ -2,7 +2,7 @@ import langEnglishVariant from "../lang/english";
 import langSpanishVariant from "../lang/spanish";
 
 const processVariant =
-  (process.env.VARIANT as "english" | "spanish") || "english";
+  (process.env.VARIANT as "english" | "spanish") || "spanish";
 
 const processEnvironment =
   (process.env.ENVIRONMENT as "development" | "production") || "production";
