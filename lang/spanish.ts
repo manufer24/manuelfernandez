@@ -23,7 +23,7 @@ const ES = {
     hello: "¡Hola!",
     me: "Soy",
     name: "Manuel Fernández",
-    job: "un Desarrollador Front-End Web",
+    job: "un Desarrollador Front-End",
     company: "Hurtado Global Media Group",
     currently: "Actualmente, participo en el equipo de",
     comma: ",",
@@ -34,7 +34,7 @@ const ES = {
   expertise: {
     title: "Habilidades técnicas:",
     description:
-      "Como desarrollador front-end, me encanta trabajar con las siguientes áreas:",
+      "Como desarrollador Front-End, aporto una gran competencia en las siguientes áreas:",
     list: [
       {
         title: "Integración de APIs:",
@@ -67,13 +67,14 @@ const ES = {
           "Soy bien-aventurado en el uso de Frameworks CSS para crear interfaces responsivas, personalizables y mantenibles.",
       },
       {
-        title: "Optimización de CSS:",
+        title: "Optimización de sitios web:",
         description:
-          "Conocimientos en uso de Frameworks CSS para optimizar CSS para la producción y reducir los tiempos de carga de la página.",
+          "Optimización de aplicaciones web para mejorar el rendimiento, la estabilidad y la escalabilidad, con experiencia en renderizado del lado del servidor (SSR), optimización para motores de búsqueda (SEO) y optimización de CSS lista para producción.",
       },
       {
-        title: "Conceptos:",
-        description: "Desarrollo Web, Control de Versiones (Git).",
+        title: "Conceptos clave:",
+        description:
+          "Desarrollo de aplicaciones web, herramientas de control de versiones (Git, GitHub), nivel básico/intermedio en figma.",
       },
     ],
     downloadCV: "Descargar CV",

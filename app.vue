@@ -10,6 +10,10 @@
 import { variantConfig } from "./config/variant";
 import { useRoute } from "vue-router";
 
+const config = useRuntimeConfig();
+
+const variant = config.public.variant as "english" | "spanish";
+
 useHead({
   htmlAttrs: {
     lang: variantConfig.siteLangCode[variantConfig.siteVariant].code,
@@ -61,6 +65,6 @@ useHead({
       href: `${variantConfig.siteOrigin}${useRoute().fullPath}`,
     },
   ],
-  meta: variantConfig.defaultMetaTags(variantConfig.siteVariant),
+  meta: variantConfig.defaultMetaTags(variant),
 });
 </script>

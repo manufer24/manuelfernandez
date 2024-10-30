@@ -5,7 +5,7 @@
         <h1 class="main-container__title">
           <NuxtImg
             class="title-image"
-            src="/assets/jpg/avatar-img.jpg"
+            src="/assets/webp/avatar-img.webp"
             :alt="lang.toolTips.profile.alt"
             :title="lang.toolTips.profile.title"
           />
@@ -71,6 +71,8 @@
 <script lang="ts" setup>
 import { variantConfig } from "~/config/variant";
 import { API_DATA } from "~/server/api-data";
+
+// TODO: optimize img in api data
 
 const { lang } = useLang();
 

@@ -6,22 +6,16 @@
         class="header__logo"
         :title="lang.toolTips.homepage.title"
       >
-        <img
+        <NuxtImg
           class="header__logo-img"
           width="24px"
           height="24px"
-          src="/assets/png/logo/logo-portfolio.png"
+          src="/assets/webp/logo-porfolio.webp"
           :alt="lang.toolTips.homepage.alt"
         />
 
         <span class="header__logo-text">Manuel Fernández</span>
       </nuxt-link>
-
-      <!-- <div class="flex items-center gap-x-3">
-        <HeaderDropdown class="hidden lg:block" />
-        <HeaderDropdown dropdownVariant="up" class="block lg:hidden" />
-        <HeaderThemeSwitcher />
-      </div> -->
       <HeaderThemeSwitcher />
     </nav>
   </header>
@@ -43,7 +37,7 @@ const { lang } = useLang();
     @apply flex items-center gap-x-3;
 
     &-img {
-      @apply block h-6 w-6;
+      @apply block h-6 w-6 object-contain;
     }
 
     &-text {

@@ -69,13 +69,14 @@ const EN = {
           "I am skilled in using Tailwind CSS to create responsive, customizable, and maintainable user interfaces.",
       },
       {
-        title: "CSS Optimization:",
+        title: "Website Optimization:",
         description:
-          "I know how to use Tailwind CSS's built-in features to optimize CSS for production and reduce page load times.",
+          "Optimizing web applications for performance, stability, and scalability, with expertise in Server-Side Rendering (SSR), Search Engine Optimization (SEO), and production-ready CSS optimization.",
       },
       {
-        title: "Concepts:",
-        description: "Web Application Development, Version Control (Git).",
+        title: "Key Concepts:",
+        description:
+          "Web Application Development, Version Control Tools (Git, GitHub), basic/intermediate level in figma.",
       },
     ],
     downloadCV: "Download CV",

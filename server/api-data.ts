@@ -15,7 +15,7 @@ const API_DATA_EN = {
       technologies: ["Astro", "Vue.js", "TypeScript", "Tailwind CSS"],
       slug: "ofertas-extremas",
       image: {
-        src: "/assets/png/ofertasextremas/ofertas-extremas-logo.png",
+        src: "/assets/webp/ofertasextremas/ofertas-extremas-logo.webp",
         alt: "Ofertas Extremas project",
         title: "Ofertas Extremas project",
       },
@@ -30,7 +30,7 @@ const API_DATA_EN = {
       technologies: ["Nuxt.js", "TypeScript", "Tailwind CSS"],
       slug: "megadescuentos",
       image: {
-        src: "/assets/png/communitydeals/megadescuentos-logo.png",
+        src: "/assets/webp/communitydeals/megadescuentos-logo.webp",
         alt: "MEGAdescuentos project",
         title: "MEGAdescuentos project",
       },
@@ -45,7 +45,7 @@ const API_DATA_EN = {
       technologies: ["Nuxt.js", "TypeScript", "Tailwind CSS"],
       slug: "coleccion-milenio-arte",
       image: {
-        src: "/assets/png/artemilenio/arte-milenio-logo.png",
+        src: "/assets/webp/artemilenio/arte-milenio-logo.webp",
         alt: "coleccion milenio arte project",
         title: "coleccion milenio arte project",
       },
@@ -114,7 +114,7 @@ const API_DATA_EN = {
         <div class="section-grid-container">
         <figure>
           <img
-            src="/assets/png/ofertasextremas/ofertas-extremas-mobile-1.png"
+            src="/assets/webp/ofertasextremas/ofertas-extremas-mobile-1.webp"
             alt="Ofertas Extremas mobile view"
             title="Ofertas Extremas mobile view"
           />
@@ -123,7 +123,7 @@ const API_DATA_EN = {
 
          <figure>
           <img
-            src="/assets/png/ofertasextremas/ofertas-extremas-tablet-1.png"
+            src="/assets/webp/ofertasextremas/ofertas-extremas-tablet-1.webp"
             alt="Ofertas Extremas Tablet view"
             title="Ofertas Extremas Tablet view"
           />
@@ -132,7 +132,7 @@ const API_DATA_EN = {
 
         <figure>
           <img
-            src="/assets/png/ofertasextremas/ofertas-extremas-desktop-1.png"
+            src="/assets/webp/ofertasextremas/ofertas-extremas-desktop-1.webp"
             alt="Ofertas Extremas desktop view"
             title="Ofertas Extremas desktop view"
           />
@@ -140,7 +140,7 @@ const API_DATA_EN = {
         </figure> 
         <figure>
           <img
-            src="/assets/png/ofertasextremas/ofertas-extremas-desktop-2.png"
+            src="/assets/webp/ofertasextremas/ofertas-extremas-desktop-2.webp"
             alt="Ofertas Extremas desktop view"
             title="Ofertas Extremas desktop view"
           />
@@ -224,7 +224,7 @@ const API_DATA_EN = {
         <div class="section-grid-container">
         <figure>
           <img
-            src="/assets/png/communitydeals/megadescuentos-mobile-1.png"
+            src="/assets/webp/communitydeals/megadescuentos-mobile-1.webp"
             alt="MEGAdescuentos mobile view"
             title="MEGAdescuentos mobile view"
           />
@@ -233,7 +233,7 @@ const API_DATA_EN = {
 
         <figure>
           <img
-            src="/assets/png/communitydeals/megadescuentos-tablet-1.png"
+            src="/assets/webp/communitydeals/megadescuentos-tablet-1.webp"
             alt="MEGAdescuentos tablet view"
             title="MEGAdescuentos tablet view"
           />
@@ -241,20 +241,20 @@ const API_DATA_EN = {
         </figure> 
         <figure>
           <img
-            src="/assets/png/communitydeals/megadescuentos-desktop-1.png"
-            alt="MEGAdescuentos desktop view"
-            title="MEGAdescuentos desktop view"
+            src="/assets/webp/communitydeals/megadescuentos-desktop-1.webp"
+            alt="MEGAdescuentos desktop Homepage view"
+            title="MEGAdescuentos desktop Homepage view"
           />
-          <figcaption>MEGAdescuentos desktop view</figcaption>
+          <figcaption>MEGAdescuentos desktop Homepage view</figcaption>
         </figure> 
 
         <figure>
           <img
-            src="/assets/png/communitydeals/megadescuentos-desktop-2.png"
-            alt="MEGAdescuentos desktop view"
-            title="MEGAdescuentos desktop view"
+            src="/assets/webp/communitydeals/megadescuentos-desktop-2.webp"
+            alt="MEGAdescuentos desktop Brands view"
+            title="MEGAdescuentos desktop Brands view"
           />
-          <figcaption>MEGAdescuentos desktop view</figcaption>
+          <figcaption>MEGAdescuentos desktop Brands view</figcaption>
         </figure> 
         </div>
         </section>
@@ -276,7 +276,7 @@ const API_DATA_EN = {
          <div class="section-grid-container">
         <figure>
           <img
-            src="/assets/png/communitydeals/bchollos-mobile-1.png"
+            src="/assets/webp/communitydeals/bchollos-mobile-1.webp"
             alt="Bchollos mobile view"
             title="Bchollos mobile view"
           />
@@ -285,7 +285,7 @@ const API_DATA_EN = {
 
         <figure>
           <img
-            src="/assets/png/communitydeals/bchollos-tablet-1.png"
+            src="/assets/webp/communitydeals/bchollos-tablet-1.webp"
             alt="Bchollos tablet view"
             title="Bchollos tablet view"
           />
@@ -293,20 +293,20 @@ const API_DATA_EN = {
         </figure> 
         <figure>
           <img
-            src="/assets/png/communitydeals/bchollos-desktop-1.png"
-            alt="Bchollos desktop view"
-            title="Bchollos desktop view"
+            src="/assets/webp/communitydeals/bchollos-desktop-1.webp"
+            alt="Bchollos desktop Homepage view"
+            title="Bchollos desktop Homepage view"
           />
-          <figcaption>Bchollos desktop view</figcaption>
+          <figcaption>Bchollos desktop Homepage view</figcaption>
         </figure> 
 
         <figure>
           <img
-            src="/assets/png/communitydeals/bchollos-desktop-2.png"
-            alt="Bchollos desktop view"
-            title="Bchollos desktop view"
+            src="/assets/webp/communitydeals/bchollos-desktop-2.webp"
+            alt="Bchollos desktop Brands view"
+            title="Bchollos desktop Brands view"
           />
-          <figcaption>Bchollos desktop view</figcaption>
+          <figcaption>Bchollos desktop Brands view</figcaption>
         </figure> 
         </div>
         </section>
@@ -327,7 +327,7 @@ const API_DATA_EN = {
          <div class="section-grid-container">
         <figure>
           <img
-            src="/assets/png/communitydeals/jdescuentos-mobile-1.png"
+            src="/assets/webp/communitydeals/jdescuentos-mobile-1.webp"
             alt="Jdescuentos mobile view"
             title="Jdescuentos mobile view"
           />
@@ -336,7 +336,7 @@ const API_DATA_EN = {
 
         <figure>
           <img
-            src="/assets/png/communitydeals/jdescuentos-tablet-1.png"
+            src="/assets/webp/communitydeals/jdescuentos-tablet-1.webp"
             alt="Jdescuentos tablet view"
             title="Jdescuentos tablet view"
           />
@@ -344,20 +344,20 @@ const API_DATA_EN = {
         </figure> 
         <figure>
           <img
-            src="/assets/png/communitydeals/jdescuentos-desktop-1.png"
-            alt="Jdescuentos desktop view"
-            title="Jdescuentos desktop view"
+            src="/assets/webp/communitydeals/jdescuentos-desktop-1.webp"
+            alt="Jdescuentos desktop Homepage view"
+            title="Jdescuentos desktop Homepage view"
           />
-          <figcaption>Jdescuentos desktop view</figcaption>
+          <figcaption>Jdescuentos desktop Homepage view</figcaption>
         </figure> 
 
         <figure>
           <img
-            src="/assets/png/communitydeals/jdescuentos-desktop-2.png"
-            alt="Jdescuentos desktop view"
-            title="Jdescuentos desktop view"
+            src="/assets/webp/communitydeals/jdescuentos-desktop-2.webp"
+            alt="Jdescuentos desktop Brands view"
+            title="Jdescuentos desktop Brands view"
           />
-          <figcaption>Jdescuentos desktop view</figcaption>
+          <figcaption>Jdescuentos desktop Brands view</figcaption>
         </figure> 
         </div>
         </section>
@@ -378,7 +378,7 @@ const API_DATA_EN = {
          <div class="section-grid-container">
         <figure>
           <img
-            src="/assets/png/communitydeals/okdescontos-mobile-1.png"
+            src="/assets/webp/communitydeals/okdescontos-mobile-1.webp"
             alt="OKdescontos mobile view"
             title="OKdescontos mobile view"
           />
@@ -387,7 +387,7 @@ const API_DATA_EN = {
 
         <figure>
           <img
-            src="/assets/png/communitydeals/okdescontos-tablet-1.png"
+            src="/assets/webp/communitydeals/okdescontos-tablet-1.webp"
             alt="OKdescontos tablet view"
             title="OKdescontos tablet view"
           />
@@ -395,20 +395,20 @@ const API_DATA_EN = {
         </figure> 
         <figure>
           <img
-            src="/assets/png/communitydeals/okdescontos-desktop-1.png"
-            alt="OKdescontos desktop view"
-            title="OKdescontos desktop view"
+            src="/assets/webp/communitydeals/okdescontos-desktop-1.webp"
+            alt="OKdescontos desktop Homepage view"
+            title="OKdescontos desktop Homepage view"
           />
-          <figcaption>OKdescontos desktop view</figcaption>
+          <figcaption>OKdescontos desktop Homepage view</figcaption>
         </figure> 
 
         <figure>
           <img
-            src="/assets/png/communitydeals/okdescontos-desktop-2.png"
-            alt="OKdescontos desktop view"
-            title="OKdescontos desktop view"
+            src="/assets/webp/communitydeals/okdescontos-desktop-2.webp"
+            alt="OKdescontos desktop Brands view"
+            title="OKdescontos desktop Brands view"
           />
-          <figcaption>OKdescontos desktop view</figcaption>
+          <figcaption>OKdescontos desktop Brands view</figcaption>
         </figure> 
         </div>
         </section>
@@ -481,7 +481,7 @@ const API_DATA_EN = {
           <div class="section-grid-container">
             <figure>
               <img
-                src="/assets/png/artemilenio/arte-milenio-1.png"
+                src="/assets/webp/artemilenio/arte-milenio-1.webp"
                 alt="card component imagen"
                 title="card component imagen"
               />
@@ -490,7 +490,7 @@ const API_DATA_EN = {
             </figure> 
             <figure>
               <img
-                src="/assets/png/artemilenio/arte-milenio-2.png"
+                src="/assets/webp/artemilenio/arte-milenio-2.webp"
                 alt="card component imagen"
                 title="card component imagen"
               />
@@ -499,7 +499,7 @@ const API_DATA_EN = {
             </figure> 
             <figure>
               <img
-                src="/assets/png/artemilenio/arte-milenio-3.png"
+                src="/assets/webp/artemilenio/arte-milenio-3.webp"
                 alt="card component imagen"
                 title="card component imagen"
               />
@@ -507,7 +507,7 @@ const API_DATA_EN = {
             </figure> 
             <figure>
               <img
-                src="/assets/png/artemilenio/arte-milenio-4.png"
+                src="/assets/webp/artemilenio/arte-milenio-4.webp"
                 alt="card component imagen"
                 title="card component imagen"
               />
@@ -515,7 +515,7 @@ const API_DATA_EN = {
             </figure> 
             <figure>
               <img
-                src="/assets/png/artemilenio/arte-milenio-5.png"
+                src="/assets/webp/artemilenio/arte-milenio-5.webp"
                 alt="dynamic component imagen"
                 title="dynamic component imagen"
               />
@@ -574,7 +574,7 @@ const API_DATA_ES = {
       technologies: ["Astro", "Vue.js", "TypeScript", "Tailwind CSS"],
       slug: "ofertas-extremas",
       image: {
-        src: "/assets/png/ofertasextremas/ofertas-extremas-logo.png",
+        src: "/assets/webp/ofertasextremas/ofertas-extremas-logo.webp",
         alt: "Proyecto Ofertas Extremas",
         title: "Proyecto Ofertas Extremas",
       },
@@ -589,7 +589,7 @@ const API_DATA_ES = {
       technologies: ["Nuxt.js", "TypeScript", "Tailwind CSS"],
       slug: "megadescuentos",
       image: {
-        src: "/assets/png/communitydeals/megadescuentos-logo.png",
+        src: "/assets/webp/communitydeals/megadescuentos-logo.webp",
         alt: "Proyecto MEGAdescuentos",
         title: "Proyecto MEGAdescuentos",
       },
@@ -604,7 +604,7 @@ const API_DATA_ES = {
       technologies: ["Nuxt.js", "TypeScript", "Tailwind CSS"],
       slug: "coleccion-milenio-arte",
       image: {
-        src: "/assets/png/artemilenio/arte-milenio-logo.png",
+        src: "/assets/webp/artemilenio/arte-milenio-logo.webp",
         alt: "Proyecto coleccion milenio arte",
         title: "Proyecto coleccion milenio arte",
       },
@@ -673,7 +673,7 @@ const API_DATA_ES = {
         <div class="section-grid-container">
         <figure>
           <img
-            src="/assets/png/ofertasextremas/ofertas-extremas-mobile-1.png"
+            src="/assets/webp/ofertasextremas/ofertas-extremas-mobile-1.webp"
             alt="Ofertas extremas vista móvil"
             title="Ofertas extremas vista móvil"
           />
@@ -682,7 +682,7 @@ const API_DATA_ES = {
 
          <figure>
           <img
-            src="/assets/png/ofertasextremas/ofertas-extremas-tablet-1.png"
+            src="/assets/webp/ofertasextremas/ofertas-extremas-tablet-1.webp"
             alt="Ofertas Extremas vista en tableta"
             title="Ofertas Extremas vista en tableta"
           />
@@ -691,7 +691,7 @@ const API_DATA_ES = {
 
         <figure>
           <img
-            src="/assets/png/ofertasextremas/ofertas-extremas-desktop-1.png"
+            src="/assets/webp/ofertasextremas/ofertas-extremas-desktop-1.webp"
             alt="Ofertas Extremas vista de escritorio"
             title="Ofertas Extremas vista de escritorio"
           />
@@ -699,7 +699,7 @@ const API_DATA_ES = {
         </figure> 
         <figure>
           <img
-            src="/assets/png/ofertasextremas/ofertas-extremas-desktop-2.png"
+            src="/assets/webp/ofertasextremas/ofertas-extremas-desktop-2.webp"
             alt="Ofertas Extremas vista de escritorio"
             title="Ofertas Extremas vista de escritorio"
           />
@@ -783,7 +783,7 @@ const API_DATA_ES = {
         <div class="section-grid-container">
         <figure>
           <img
-            src="/assets/png/communitydeals/megadescuentos-mobile-1.png"
+            src="/assets/webp/communitydeals/megadescuentos-mobile-1.webp"
             alt="MEGAdescuentos vista móvil"
             title="MEGAdescuentos vista móvil"
           />
@@ -792,7 +792,7 @@ const API_DATA_ES = {
 
         <figure>
           <img
-            src="/assets/png/communitydeals/megadescuentos-tablet-1.png"
+            src="/assets/webp/communitydeals/megadescuentos-tablet-1.webp"
             alt="MEGAdescuentos vista tablet"
             title="MEGAdescuentos vista tablet"
           />
@@ -800,20 +800,20 @@ const API_DATA_ES = {
         </figure> 
         <figure>
           <img
-            src="/assets/png/communitydeals/megadescuentos-desktop-1.png"
-            alt="MEGAdescuentos vista escritorio"
-            title="MEGAdescuentos vista escritorio"
+            src="/assets/webp/communitydeals/megadescuentos-desktop-1.webp"
+            alt="MEGAdescuentos vista de escritorio página de inicio"
+            title="MEGAdescuentos vista de escritorio página de inicio"
           />
-          <figcaption>MEGAdescuentos vista escritorio</figcaption>
+          <figcaption>MEGAdescuentos vista de escritorio página de inicio</figcaption>
         </figure> 
 
         <figure>
           <img
-            src="/assets/png/communitydeals/megadescuentos-desktop-2.png"
-            alt="MEGAdescuentos vista de escritorio"
-            title="MEGAdescuentos vista de escritorio"
+            src="/assets/webp/communitydeals/megadescuentos-desktop-2.webp"
+            alt="MEGAdescuentos vista de escritorio página Marcas"
+            title="MEGAdescuentos vista de escritorio página Marcas"
           />
-          <figcaption>MEGAdescuentos vista de escritorio</figcaption>
+          <figcaption>MEGAdescuentos vista de escritorio página Marcas</figcaption>
         </figure> 
         </div>
         </section>
@@ -835,7 +835,7 @@ const API_DATA_ES = {
          <div class="section-grid-container">
         <figure>
           <img
-            src="/assets/png/communitydeals/bchollos-mobile-1.png"
+            src="/assets/webp/communitydeals/bchollos-mobile-1.webp"
             alt="Bchollos vista móvil"
             title="Bchollos vista móvil"
           />
@@ -844,7 +844,7 @@ const API_DATA_ES = {
 
         <figure>
           <img
-            src="/assets/png/communitydeals/bchollos-tablet-1.png"
+            src="/assets/webp/communitydeals/bchollos-tablet-1.webp"
             alt="Bchollos vista tablet"
             title="Bchollos vista tablet"
           />
@@ -852,20 +852,20 @@ const API_DATA_ES = {
         </figure> 
         <figure>
           <img
-            src="/assets/png/communitydeals/bchollos-desktop-1.png"
-            alt="Bchollos vista de escritorio"
-            title="Bchollos vista de escritorio"
-          />
-          <figcaption>Bchollos vista de escritorio</figcaption>
+            src="/assets/webp/communitydeals/bchollos-desktop-1.webp"
+            alt="Bchollos vista de  escritorio página de inicio"
+            title="Bchollos vista de  escritorio página de inicio"
+          /> 
+          <figcaption>Bchollos vista de  escritorio página de inicio</figcaption>
         </figure> 
 
         <figure>
           <img
-            src="/assets/png/communitydeals/bchollos-desktop-2.png"
-            alt="Bchollos vista de escritorio"
-            title="Bchollos vista de escritorio"
+            src="/assets/webp/communitydeals/bchollos-desktop-2.webp"
+            alt="Bchollos vista de escritorio página Marcas"
+            title="Bchollos vista de escritorio página Marcas"
           />
-          <figcaption>Bchollos vista de escritorio</figcaption>
+          <figcaption>Bchollos vista de escritorio página Marcas</figcaption>
         </figure> 
         </div>
         </section>
@@ -886,7 +886,7 @@ const API_DATA_ES = {
          <div class="section-grid-container">
         <figure>
           <img
-            src="/assets/png/communitydeals/jdescuentos-mobile-1.png"
+            src="/assets/webp/communitydeals/jdescuentos-mobile-1.webp"
             alt="Jdescuentos vista móvil"
             title="Jdescuentos vista móvil"
           />
@@ -895,7 +895,7 @@ const API_DATA_ES = {
 
         <figure>
           <img
-            src="/assets/png/communitydeals/jdescuentos-tablet-1.png"
+            src="/assets/webp/communitydeals/jdescuentos-tablet-1.webp"
             alt="Jdescuentos vista tablet"
             title="Jdescuentos vista tablet"
           />
@@ -903,20 +903,20 @@ const API_DATA_ES = {
         </figure> 
         <figure>
           <img
-            src="/assets/png/communitydeals/jdescuentos-desktop-1.png"
-            alt="Jdescuentos vista de escritorio"
-            title="Jdescuentos vista de escritorio"
+            src="/assets/webp/communitydeals/jdescuentos-desktop-1.webp"
+            alt="Jdescuentos vista de escritorio página de inicio"
+            title="Jdescuentos vista de escritorio página de inicio"
           />
-          <figcaption>Jdescuentos vista de escritorio</figcaption>
+          <figcaption>Jdescuentos vista de escritorio página de inicio</figcaption>
         </figure> 
 
         <figure>
           <img
-            src="/assets/png/communitydeals/jdescuentos-desktop-2.png"
-            alt="Jdescuentos vista de escritorio"
-            title="Jdescuentos vista de escritorio"
+            src="/assets/webp/communitydeals/jdescuentos-desktop-2.webp"
+            alt="Jdescuentos vista de escritorio página Marcas"
+            title="Jdescuentos vista de escritorio página Marcas"
           />
-          <figcaption>Jdescuentos vista de escritorio</figcaption>
+          <figcaption>Jdescuentos vista de escritorio página Marcas</figcaption>
         </figure> 
         </div>
         </section>
@@ -937,7 +937,7 @@ const API_DATA_ES = {
          <div class="section-grid-container">
         <figure>
           <img
-            src="/assets/png/communitydeals/okdescontos-mobile-1.png"
+            src="/assets/webp/communitydeals/okdescontos-mobile-1.webp"
             alt="OKdescontos vista móvil"
             title="OKdescontos vista móvil"
           />
@@ -946,7 +946,7 @@ const API_DATA_ES = {
 
         <figure>
           <img
-            src="/assets/png/communitydeals/okdescontos-tablet-1.png"
+            src="/assets/webp/communitydeals/okdescontos-tablet-1.webp"
             alt="OKdescontos vista tablet"
             title="OKdescontos vista tablet"
           />
@@ -954,20 +954,20 @@ const API_DATA_ES = {
         </figure> 
         <figure>
           <img
-            src="/assets/png/communitydeals/okdescontos-desktop-1.png"
-            alt="OKdescontos vista de escritorio"
-            title="OKdescontos vista de escritorio"
+            src="/assets/webp/communitydeals/okdescontos-desktop-1.webp"
+            alt="OKdescontos vista de escritorio página de inicio"
+            title="OKdescontos vista de escritorio página de inicio"
           />
-          <figcaption>OKdescontos vista de escritorio</figcaption>
+          <figcaption>OKdescontos vista de escritorio página de inicio</figcaption>
         </figure> 
 
         <figure>
           <img
-            src="/assets/png/communitydeals/okdescontos-desktop-2.png"
-            alt="OKdescontos vista de escritorio"
-            title="OKdescontos vista de escritorio"
+            src="/assets/webp/communitydeals/okdescontos-desktop-2.webp"
+            alt="OKdescontos vista de escritorio página Marcas"
+            title="OKdescontos vista de escritorio página Marcas"
           />
-          <figcaption>OKdescontos vista de escritorio</figcaption>
+          <figcaption>OKdescontos vista de escritorio página Marcas</figcaption>
         </figure> 
         </div>
         </section>
@@ -1040,7 +1040,7 @@ const API_DATA_ES = {
           <div class="section-grid-container">
             <figure>
               <img
-                src="/assets/png/artemilenio/arte-milenio-1.png"
+                src="/assets/webp/artemilenio/arte-milenio-1.webp"
                 alt="imagen de componente tarjeta"
                 title="imagen de componente tarjeta"
               />
@@ -1048,7 +1048,7 @@ const API_DATA_ES = {
             </figure> 
             <figure>
               <img
-                src="/assets/png/artemilenio/arte-milenio-2.png"
+                src="/assets/webp/artemilenio/arte-milenio-2.webp"
                 alt="imagen de componente tarjeta"
                 title="imagen de componente tarjeta"
               />
@@ -1056,7 +1056,7 @@ const API_DATA_ES = {
             </figure> 
             <figure>
               <img
-                src="/assets/png/artemilenio/arte-milenio-3.png"
+                src="/assets/webp/artemilenio/arte-milenio-3.webp"
                 alt="imagen de componente tarjeta"
                 title="imagen de componente tarjeta"
               />
@@ -1064,7 +1064,7 @@ const API_DATA_ES = {
             </figure> 
             <figure>
               <img
-                src="/assets/png/artemilenio/arte-milenio-4.png"
+                src="/assets/webp/artemilenio/arte-milenio-4.webp"
                 alt="imagen de componente tarjeta"
                 title="imagen de componente tarjeta"
               />
@@ -1072,7 +1072,7 @@ const API_DATA_ES = {
             </figure> 
             <figure>
               <img
-                src="/assets/png/artemilenio/arte-milenio-5.png"
+                src="/assets/webp/artemilenio/arte-milenio-5.webp"
                 alt="imagen de componente dinámico"
                 title="imagen de componente dinámico"
               />
