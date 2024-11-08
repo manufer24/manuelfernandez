@@ -16,13 +16,30 @@
 
         <span class="header__logo-text">Manuel Fernández</span>
       </nuxt-link>
-      <HeaderThemeSwitcher />
+
+      <div class="flex items-center gap-x-5">
+        <NuxtLink
+          :to="switchLang"
+          class="font-semibold text-letter dark:text-letter-dark"
+        >
+          {{ currentLanguage }}
+        </NuxtLink>
+        <HeaderThemeSwitcher />
+      </div>
     </nav>
   </header>
 </template>
 
 <script lang="ts" setup>
+const { public: config } = useRuntimeConfig();
 const { lang } = useLang();
+
+const currentLanguage = config.variant === "english" ? "Spanish" : "Inglés";
+
+const switchLang =
+  config.variant === "english"
+    ? "https://manuelfernandez-es.vercel.app/"
+    : "https://manuelfernandez-us.vercel.app/";
 </script>
 
 <style scoped lang="postcss">

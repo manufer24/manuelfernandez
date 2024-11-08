@@ -26,6 +26,7 @@
 <script lang="ts" setup>
 import { API_DATA } from "~/server/api-data";
 import dynamicRouteGuard from "~/middleware/dynamicRouteGuard";
+import { variantConfig } from "~/config/variant";
 
 const { lang } = useLang();
 
@@ -43,6 +44,22 @@ useHead({
     {
       name: "description",
       content: lang.value.seo.projects.description,
+    },
+    {
+      hid: "og:url",
+      property: "og:url",
+      content: `${variantConfig.siteOrigin}${useRoute().fullPath}`,
+    },
+    {
+      hid: "twitter:url",
+      property: "twitter:url",
+      content: `${variantConfig.siteOrigin}${useRoute().fullPath}`,
+    },
+  ],
+  link: [
+    {
+      rel: "canonical",
+      href: `${variantConfig.siteOrigin}${useRoute().fullPath}`,
     },
   ],
 });
