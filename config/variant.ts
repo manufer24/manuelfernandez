@@ -1,8 +1,7 @@
 import langEnglishVariant from "../lang/english";
 import langSpanishVariant from "../lang/spanish";
 
-const processVariant =
-  (process.env.NUXT_ENV_VARIANT as "english" | "spanish") || "spanish";
+const processVariant = process.env.NUXT_ENV_VARIANT as "english" | "spanish";
 
 const processEnvironment =
   (process.env.ENVIRONMENT as "development" | "production") || "production";
