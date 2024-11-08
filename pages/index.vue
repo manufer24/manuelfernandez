@@ -72,8 +72,6 @@
 import { variantConfig } from "~/config/variant";
 import { API_DATA } from "~/server/api-data";
 
-// TODO: optimize img in api data
-
 const { lang } = useLang();
 
 const projectsCardData = API_DATA.projectsCardData;
@@ -100,6 +98,11 @@ useHead({
       content: lang.value.seo.homepage.description,
     },
     {
+      hid: "og:url",
+      property: "og:url",
+      content: `${variantConfig.siteOrigin}${useRoute().fullPath}`,
+    },
+    {
       hid: "twitter:title",
       property: "twitter:title",
       content: lang.value.seo.homepage.title,
@@ -108,6 +111,17 @@ useHead({
       hid: "twitter:description",
       property: "twitter:description",
       content: lang.value.seo.homepage.description,
+    },
+    {
+      hid: "twitter:url",
+      property: "twitter:url",
+      content: `${variantConfig.siteOrigin}${useRoute().fullPath}`,
+    },
+  ],
+  link: [
+    {
+      rel: "canonical",
+      href: `${variantConfig.siteOrigin}${useRoute().fullPath}`,
     },
   ],
 });
