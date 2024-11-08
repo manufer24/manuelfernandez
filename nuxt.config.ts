@@ -32,8 +32,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       origin: variantConfig.siteOrigin,
-      variant: process.env.NUXT_ENV_VARIANT,
-      // variant: variantConfig.siteVariant as "english" | "spanish",
+      variant: variantConfig.siteVariant as "english" | "spanish",
       siteName: variantConfig.siteName,
       mode: process.env.NODE_ENV,
       lang: variantConfig.siteLangCode[variantConfig.siteVariant].code,
