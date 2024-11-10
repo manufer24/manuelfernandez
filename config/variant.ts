@@ -2,7 +2,7 @@ import langEnglishVariant from "../lang/english";
 import langSpanishVariant from "../lang/spanish";
 
 const processVariant =
-  (process.env.NUXT_ENV_VARIANT as "english" | "spanish") || "english";
+  (process.env.VARIANT as "english" | "spanish") || "english";
 
 const processEnvironment =
   (process.env.ENVIRONMENT as "development" | "production") || "production";
@@ -25,13 +25,19 @@ const langs = {
 
 const siteName = {
   english: "manuelfernandez-us",
-  spanish: "manuelfernandez-us",
+  spanish: "manuelfernandez-es",
 };
 
 const siteOrigin = {
   english: "https://manuelfernandez-us.vercel.app",
   spanish: "https://manuelfernandez-es.vercel.app",
 };
+
+//@TODO: look for the final host
+// const siteFinalHost = {
+//   english: "manuelfernandez-us.vercel.app",
+//   spanish: "manuelfernandez-es.vercel.app",
+// };
 
 const defaultMetaTags = (variant: typeof processVariant) => [
   {
@@ -75,8 +81,8 @@ export const variantConfig = {
   siteVariant: processVariant,
   siteName: siteName[processVariant],
   siteOrigin: siteOrigin[processVariant],
-  siteLangs: langs,
   siteLangCode: siteLanguage,
-  defaultMetaTags,
+  siteLangs: langs,
+  metaTags: defaultMetaTags,
   processEnvironment,
 };
