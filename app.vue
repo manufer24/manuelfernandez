@@ -16,7 +16,7 @@ const variant = config.public.variant as "english" | "spanish";
 
 useHead({
   htmlAttrs: {
-    lang: variantConfig.siteLangCode[variantConfig.siteVariant].code,
+    lang: variantConfig.siteLangCode[variant].code,
   },
   link: [
     {
@@ -65,6 +65,6 @@ useHead({
       href: `${variantConfig.siteOrigin}${useRoute().fullPath}`,
     },
   ],
-  meta: variantConfig.defaultMetaTags(variant),
+  meta: variantConfig.metaTags(variant),
 });
 </script>

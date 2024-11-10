@@ -72,6 +72,11 @@
 import { variantConfig } from "~/config/variant";
 import { API_DATA } from "~/server/api-data";
 
+const {
+  public: { origin },
+} = useRuntimeConfig();
+const Route = useRoute();
+// const { $lang } = useNuxtApp(); // @TODO: check how to use this
 const { lang } = useLang();
 
 const projectsCardData = API_DATA.projectsCardData;
@@ -100,7 +105,7 @@ useHead({
     {
       hid: "og:url",
       property: "og:url",
-      content: `${variantConfig.siteOrigin}${useRoute().fullPath}`,
+      content: origin + Route.path,
     },
     {
       hid: "twitter:title",
@@ -115,15 +120,21 @@ useHead({
     {
       hid: "twitter:url",
       property: "twitter:url",
-      content: `${variantConfig.siteOrigin}${useRoute().fullPath}`,
+      content: origin + Route.path,
     },
   ],
   link: [
     {
       rel: "canonical",
-      href: `${variantConfig.siteOrigin}${useRoute().fullPath}`,
+      href: origin + Route.path,
     },
   ],
+  // link: [
+  //   {
+  //     rel: "canonical",
+  //     href: `${variantConfig.siteOrigin}${useRoute().fullPath}`,
+  //   },
+  // ],
 });
 </script>
 
