@@ -1,5 +1,3 @@
-import { Title } from "#build/components";
-
 const EN = {
   routes: {
     projects: "projects",
