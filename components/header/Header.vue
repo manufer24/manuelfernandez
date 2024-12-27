@@ -6,8 +6,7 @@
         class="header__logo"
         :title="$lang.toolTips.homepage.title"
       >
-        <NuxtImg
-          placeholder
+        <img
           class="header__logo-img"
           width="24px"
           height="24px"
@@ -55,7 +54,7 @@ const switchLang =
     @apply flex items-center gap-x-3;
 
     &-img {
-      @apply block h-6 w-6 object-contain;
+      @apply block h-full w-7 object-contain;
     }
 
     &-text {

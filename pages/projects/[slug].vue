@@ -24,15 +24,22 @@
 </template>
 
 <script lang="ts" setup>
-import { API_DATA } from "~/server/api-data";
+import { API_CONFIG } from "~/server/api-data";
 import dynamicRouteGuard from "~/middleware/dynamicRouteGuard";
-import { variantConfig } from "~/config/variant";
 
 const { $lang } = useNuxtApp();
 
 const route = useRoute();
 
+const config = useRuntimeConfig();
+
 const currentProject = route.params.slug;
+
+const API_DATA = API_CONFIG[config.public.variant as "english" | "spanish"];
+
+const projectData = API_DATA.projectData.find(
+  (project) => project.slug === currentProject,
+);
 
 definePageMeta({
   middleware: [dynamicRouteGuard],
@@ -48,29 +55,21 @@ useHead({
     {
       hid: "og:url",
       property: "og:url",
-      content: `${variantConfig.siteOrigin}${useRoute().fullPath}`,
+      content: config.public.origin + route.path,
     },
     {
       hid: "twitter:url",
       property: "twitter:url",
-      content: `${variantConfig.siteOrigin}${useRoute().fullPath}`,
+      content: config.public.origin + route.path,
     },
   ],
   link: [
     {
       rel: "canonical",
-      href: `${variantConfig.siteOrigin}${useRoute().fullPath}`,
+      href: config.public.origin + route.path,
     },
   ],
 });
-
-const projectData = API_DATA.projectData.find(
-  (project) => project.slug === currentProject,
-);
-
-if (!projectData) {
-  console.error(`No project data found for slug: ${currentProject}`);
-}
 </script>
 
 <style scoped lang="postcss">

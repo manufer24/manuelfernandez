@@ -1,6 +1,6 @@
 import { type Models } from "../types/models";
 
-const { public: config } = useRuntimeConfig();
+// const { public: config } = useRuntimeConfig();
 
 const API_DATA_EN = {
   projectsCardData: [
@@ -1117,5 +1117,9 @@ const API_DATA_ES = {
   ],
 };
 
-export const API_DATA =
-  config.variant === "english" ? API_DATA_EN : API_DATA_ES;
+export const API_CONFIG = {
+  english: API_DATA_EN,
+  spanish: API_DATA_ES,
+};
+// export const API_DATA =
+//   config.variant === "english" ? API_DATA_EN : API_DATA_ES;

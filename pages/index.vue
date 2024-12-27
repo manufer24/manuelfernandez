@@ -70,15 +70,17 @@
 </template>
 
 <script $lang="ts" setup>
-import { API_DATA } from "~/server/api-data";
+import { API_CONFIG } from "~/server/api-data";
 
 const {
   public: { origin, variant },
 } = useRuntimeConfig();
 
-const Route = useRoute();
+const route = useRoute();
 
 const { $lang } = useNuxtApp();
+
+const API_DATA = API_CONFIG[variant];
 
 const projectsCardData = API_DATA.projectsCardData;
 
@@ -106,7 +108,7 @@ useHead({
     {
       hid: "og:url",
       property: "og:url",
-      content: origin + Route.path,
+      content: origin + route.path,
     },
     {
       hid: "twitter:title",
@@ -121,13 +123,7 @@ useHead({
     {
       hid: "twitter:url",
       property: "twitter:url",
-      content: origin + Route.path,
-    },
-  ],
-  link: [
-    {
-      rel: "canonical",
-      href: origin + Route.path,
+      content: origin + route.path,
     },
   ],
 });

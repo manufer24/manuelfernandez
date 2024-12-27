@@ -21,6 +21,9 @@ export default defineNuxtConfig({
       ...(process.env.NODE_ENV === "production" ? { cssnano: {} } : {}),
     },
   },
+  app: {
+    pageTransition: { name: "page", mode: "out-in" },
+  },
   hooks: {
     "pages:extend"(pages) {
       pages.push({
