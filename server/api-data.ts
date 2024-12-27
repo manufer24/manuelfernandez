@@ -1,7 +1,6 @@
 import { type Models } from "../types/models";
-import { variantConfig } from "~/config/variant";
 
-const variant = variantConfig.siteVariant;
+const { public: config } = useRuntimeConfig();
 
 const API_DATA_EN = {
   projectsCardData: [
@@ -1118,4 +1117,5 @@ const API_DATA_ES = {
   ],
 };
 
-export const API_DATA = variant === "english" ? API_DATA_EN : API_DATA_ES;
+export const API_DATA =
+  config.variant === "english" ? API_DATA_EN : API_DATA_ES;
