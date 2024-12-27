@@ -4,6 +4,7 @@
       <article>
         <h1 class="main-container__title">
           <NuxtImg
+            placeholder
             class="title-image"
             src="/assets/webp/avatar-img.webp"
             :alt="$lang.toolTips.profile.alt"

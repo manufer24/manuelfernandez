@@ -7,6 +7,7 @@
         :title="$lang.toolTips.homepage.title"
       >
         <NuxtImg
+          placeholder
           class="header__logo-img"
           width="24px"
           height="24px"

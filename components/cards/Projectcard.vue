@@ -1,7 +1,9 @@
 <template>
   <NuxtLink :to="`/${$lang.routes.projects}/${info.slug}`" class="project-card">
     <figure class="project-card__info">
-      <img
+      <NuxtImg
+        placeholder
+        loading="lazy"
         class="project-card__info-image"
         :src="info.image.src"
         :alt="info.image.alt"
