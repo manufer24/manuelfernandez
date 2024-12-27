@@ -2,12 +2,12 @@
   <div>
     <section class="project-index" v-if="projectData">
       <div role="complementary" class="project-index__note">
-        {{ lang.warningNote }}
+        {{ $lang.warningNote }}
       </div>
       <h1 class="project-index__heading">{{ projectData.title }}</h1>
 
       <div class="project-index__technologies">
-        <span class="technologies-title">{{ lang.technologiesUsed }}</span>
+        <span class="technologies-title">{{ $lang.technologiesUsed }}</span>
         <ul class="tecnologies-list">
           <li v-for="(tech, index) in projectData.technologies" :key="index">
             <UiTags :label="tech" :light-background="true" />
@@ -28,7 +28,7 @@ import { API_DATA } from "~/server/api-data";
 import dynamicRouteGuard from "~/middleware/dynamicRouteGuard";
 import { variantConfig } from "~/config/variant";
 
-const { lang } = useLang();
+const { $lang } = useNuxtApp();
 
 const route = useRoute();
 
@@ -39,11 +39,11 @@ definePageMeta({
 });
 
 useHead({
-  title: lang.value.seo.projects.title,
+  title: $lang.seo.projects.title,
   meta: [
     {
       name: "description",
-      content: lang.value.seo.projects.description,
+      content: $lang.seo.projects.description,
     },
     {
       hid: "og:url",

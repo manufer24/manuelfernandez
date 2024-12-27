@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink :to="`/${lang.routes.projects}/${info.slug}`" class="project-card">
+  <NuxtLink :to="`/${$lang.routes.projects}/${info.slug}`" class="project-card">
     <figure class="project-card__info">
       <img
         class="project-card__info-image"
@@ -20,8 +20,7 @@
 </template>
 
 <script lang="ts" setup>
-// import { variantConfig } from '~/config/variant';
-const { lang } = useLang();
+const { $lang } = useNuxtApp();
 
 defineProps({
   info: {

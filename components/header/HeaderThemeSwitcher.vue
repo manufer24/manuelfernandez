@@ -5,7 +5,7 @@
     @click="
       colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
     "
-    :title="lang.toolTips.switchTheme"
+    :title="$lang.toolTips.switchTheme"
   >
     <svg
       class="theme-toggle__icon theme-toggle__icon--dark"
@@ -34,7 +34,7 @@
 <script lang="ts" setup>
 import { onMounted, ref } from "vue";
 
-const { lang } = useLang();
+const { $lang } = useNuxtApp();
 
 const isDarkMode = ref(false);
 const colorMode = useColorMode();

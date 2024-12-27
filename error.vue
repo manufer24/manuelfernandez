@@ -9,18 +9,18 @@
         error.statusCode === 500
       "
     >
-      <h1 class="error-index__title">{{ lang.errorPage.error }}</h1>
-      <h2 class="error-index__subtitle">{{ lang.errorPage.title }}</h2>
+      <h1 class="error-index__title">{{ $lang.errorPage.error }}</h1>
+      <h2 class="error-index__subtitle">{{ $lang.errorPage.title }}</h2>
       <p class="error-index__description">
-        {{ lang.errorPage.description }}
+        {{ $lang.errorPage.description }}
       </p>
 
       <NuxtLink
         to="/"
         class="error-index__button"
-        :title="lang.errorPage.backToHome"
+        :title="$lang.errorPage.backToHome"
       >
-        {{ lang.errorPage.backToHome }}
+        {{ $lang.errorPage.backToHome }}
       </NuxtLink>
     </div>
   </NuxtLayout>
@@ -34,14 +34,14 @@ defineProps({
   },
 });
 
-const { lang } = useLang();
+const { $lang } = useNuxtApp();
 
 useHead({
-  title: lang.value.seo.error.title,
+  title: $lang.seo.error.title,
   meta: [
     {
       name: "description",
-      content: lang.value.seo.error.description,
+      content: $lang.seo.error.description,
     },
   ],
 });
@@ -57,6 +57,10 @@ useHead({
 
   &__subtitle {
     @apply text-2xl font-bold text-letter dark:text-letter-dark lg:text-5xl;
+  }
+
+  &__description {
+    @apply text-center;
   }
 
   &__button {

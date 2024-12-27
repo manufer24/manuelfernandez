@@ -1,6 +1,6 @@
 import { variantConfig } from "./config/variant";
 
-const LANG = variantConfig.siteLangs[variantConfig.siteVariant];
+const LANG = variantConfig.siteLang[variantConfig.siteVariant];
 
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
@@ -33,9 +33,10 @@ export default defineNuxtConfig({
     public: {
       origin: variantConfig.siteOrigin,
       variant: variantConfig.siteVariant as "english" | "spanish",
+      lang: variantConfig.siteLangCode[variantConfig.siteVariant],
       siteName: variantConfig.siteName,
+      host: variantConfig.siteFinalHost,
       mode: process.env.NODE_ENV,
-      lang: variantConfig.siteLangCode[variantConfig.siteVariant].code,
       env: process.env.NODE_ENV,
       processEnvironment: variantConfig.processEnvironment,
     },

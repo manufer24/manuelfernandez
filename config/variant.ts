@@ -1,5 +1,5 @@
-import langEnglishVariant from "../lang/english";
-import langSpanishVariant from "../lang/spanish";
+import langEnglish from "../lang/english-lang";
+import langSpanish from "../lang/spanish-lang";
 
 const processVariant =
   (process.env.VARIANT as "english" | "spanish") || "english";
@@ -19,8 +19,8 @@ const siteLanguage = {
 };
 
 const langs = {
-  english: langEnglishVariant,
-  spanish: langSpanishVariant,
+  english: langEnglish,
+  spanish: langSpanish,
 };
 
 const siteName = {
@@ -33,11 +33,10 @@ const siteOrigin = {
   spanish: "https://manuelfernandez-es.vercel.app",
 };
 
-//@TODO: look for the final host
-// const siteFinalHost = {
-//   english: "manuelfernandez-us.vercel.app",
-//   spanish: "manuelfernandez-es.vercel.app",
-// };
+const siteFinalHost = {
+  english: "manuelfernandez-us.vercel.app",
+  spanish: "manuelfernandez-es.vercel.app",
+};
 
 const defaultMetaTags = (variant: typeof processVariant) => [
   {
@@ -79,10 +78,11 @@ const defaultMetaTags = (variant: typeof processVariant) => [
 
 export const variantConfig = {
   siteVariant: processVariant,
+  siteFinalHost: siteFinalHost[processVariant],
   siteName: siteName[processVariant],
   siteOrigin: siteOrigin[processVariant],
   siteLangCode: siteLanguage,
-  siteLangs: langs,
+  siteLang: langs,
   metaTags: defaultMetaTags,
   processEnvironment,
 };

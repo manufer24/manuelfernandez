@@ -4,14 +4,14 @@
       <nuxt-link
         to="/"
         class="header__logo"
-        :title="lang.toolTips.homepage.title"
+        :title="$lang.toolTips.homepage.title"
       >
         <NuxtImg
           class="header__logo-img"
           width="24px"
           height="24px"
           src="/assets/webp/logo-porfolio.webp"
-          :alt="lang.toolTips.homepage.alt"
+          :alt="$lang.toolTips.homepage.alt"
         />
 
         <span class="header__logo-text">Manuel Fernández</span>
@@ -32,7 +32,7 @@
 
 <script lang="ts" setup>
 const { public: config } = useRuntimeConfig();
-const { lang } = useLang();
+const { $lang } = useNuxtApp();
 
 const currentLanguage = config.variant === "english" ? "Spanish" : "Inglés";
 

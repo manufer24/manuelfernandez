@@ -5,11 +5,11 @@
         <li class="social-nav__item">
           <NuxtLink
             class="social-nav__link social-nav__link--cv"
-            :to="`/assets/pdf/${variantConfig.siteVariant}/cv-manuel-fernandez.pdf`"
+            :to="`/assets/pdf/${config.variant}/cv-manuel-fernandez.pdf`"
             target="_blank"
             download
-            :title="lang.toolTips.icons.resume.title"
-            :alt="lang.toolTips.icons.resume.alt"
+            :title="$lang.toolTips.icons.resume.title"
+            :alt="$lang.toolTips.icons.resume.alt"
             >CV</NuxtLink
           >
         </li>
@@ -18,8 +18,8 @@
             class="social-nav__link"
             to="https://github.com/manufer24"
             target="_blank"
-            :title="lang.toolTips.icons.github.title"
-            :alt="lang.toolTips.icons.github.alt"
+            :title="$lang.toolTips.icons.github.title"
+            :alt="$lang.toolTips.icons.github.alt"
           >
             <svg
               width="16"
@@ -38,8 +38,8 @@
             to="https://www.linkedin.com/in/manuelferg24/"
             class="social-nav__link"
             target="_blank"
-            :title="lang.toolTips.icons.linkedin.title"
-            :alt="lang.toolTips.icons.linkedin.alt"
+            :title="$lang.toolTips.icons.linkedin.title"
+            :alt="$lang.toolTips.icons.linkedin.alt"
           >
             <svg
               width="16"
@@ -58,8 +58,8 @@
             to="mailto:manuelferg14@gmail.com"
             class="social-nav__link"
             target="_blank"
-            :title="lang.toolTips.icons.email.title"
-            :alt="lang.toolTips.icons.email.alt"
+            :title="$lang.toolTips.icons.email.title"
+            :alt="$lang.toolTips.icons.email.alt"
           >
             <svg
               width="16"
@@ -80,8 +80,8 @@
 </template>
 
 <script lang="ts" setup>
-import { variantConfig } from "~/config/variant";
-const { lang } = useLang();
+const { public: config } = useRuntimeConfig();
+const { $lang } = useNuxtApp();
 </script>
 
 <style scoped lang="postcss">

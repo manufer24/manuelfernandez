@@ -6,34 +6,34 @@
           <NuxtImg
             class="title-image"
             src="/assets/webp/avatar-img.webp"
-            :alt="lang.toolTips.profile.alt"
-            :title="lang.toolTips.profile.title"
+            :alt="$lang.toolTips.profile.alt"
+            :title="$lang.toolTips.profile.title"
           />
-          <span class="title-text">{{ lang.greeting.hello }} 👋🏻</span>
+          <span class="title-text">{{ $lang.greeting.hello }} 👋🏻</span>
         </h1>
 
         <p>
-          {{ lang.greeting.me }}
-          <b class="bold-color-text">{{ lang.greeting.name }}</b
-          >{{ lang.greeting.comma }}
-          {{ lang.greeting.job }}
+          {{ $lang.greeting.me }}
+          <b class="bold-color-text">{{ $lang.greeting.name }}</b
+          >{{ $lang.greeting.comma }}
+          {{ $lang.greeting.job }}
         </p>
 
         <p>
-          {{ lang.greeting.currently }}
-          <b class="bold-color-text">{{ lang.greeting.company }}</b
-          >{{ lang.greeting.comma }}
-          {{ lang.greeting.where }}
+          {{ $lang.greeting.currently }}
+          <b class="bold-color-text">{{ $lang.greeting.company }}</b
+          >{{ $lang.greeting.comma }}
+          {{ $lang.greeting.where }}
         </p>
 
-        <h2 class="section-title">{{ lang.expertise.title }}</h2>
+        <h2 class="section-title">{{ $lang.expertise.title }}</h2>
 
         <p>
-          {{ lang.expertise.description }}
+          {{ $lang.expertise.description }}
         </p>
 
         <ul class="main-container__list">
-          <li v-for="(item, index) in lang.expertise.list" :key="index">
+          <li v-for="(item, index) in $lang.expertise.list" :key="index">
             <b>{{ item.title }}</b>
             {{ item.description }}
           </li>
@@ -41,12 +41,12 @@
 
         <h2 class="section-title section-title--link">
           <NuxtLink
-            :to="`/assets/pdf/${variantConfig.siteVariant}/cv-manuel-fernandez.pdf`"
+            :to="`/assets/pdf/${variant}/cv-manuel-fernandez.pdf`"
             target="_blank"
             download
-            :title="lang.toolTips.icons.resume.title"
-            :alt="lang.toolTips.icons.resume.alt"
-            >{{ lang.expertise.downloadCV }}</NuxtLink
+            :title="$lang.toolTips.icons.resume.title"
+            :alt="$lang.toolTips.icons.resume.alt"
+            >{{ $lang.expertise.downloadCV }}</NuxtLink
           >
         </h2>
       </article>
@@ -54,7 +54,7 @@
       <hr />
 
       <article class="main-container__article">
-        <h2 class="main-container__subtitle">{{ lang.projects.title }}</h2>
+        <h2 class="main-container__subtitle">{{ $lang.projects.title }}</h2>
 
         <section>
           <ul>
@@ -68,39 +68,39 @@
   </div>
 </template>
 
-<script lang="ts" setup>
-import { variantConfig } from "~/config/variant";
+<script $lang="ts" setup>
 import { API_DATA } from "~/server/api-data";
 
 const {
-  public: { origin },
+  public: { origin, variant },
 } = useRuntimeConfig();
+
 const Route = useRoute();
-// const { $lang } = useNuxtApp(); // @TODO: check how to use this
-const { lang } = useLang();
+
+const { $lang } = useNuxtApp();
 
 const projectsCardData = API_DATA.projectsCardData;
 
 useHead({
-  title: lang.value.seo.homepage.title,
+  title: $lang.seo.homepage.title,
   meta: [
     {
       name: "title",
-      content: lang.value.seo.homepage.title,
+      content: $lang.seo.homepage.title,
     },
     {
       name: "description",
-      content: lang.value.seo.homepage.description,
+      content: $lang.seo.homepage.description,
     },
     {
       hid: "og:title",
       property: "og:title",
-      content: lang.value.seo.homepage.title,
+      content: $lang.seo.homepage.title,
     },
     {
       hid: "og:description",
       property: "og:description",
-      content: lang.value.seo.homepage.description,
+      content: $lang.seo.homepage.description,
     },
     {
       hid: "og:url",
@@ -110,12 +110,12 @@ useHead({
     {
       hid: "twitter:title",
       property: "twitter:title",
-      content: lang.value.seo.homepage.title,
+      content: $lang.seo.homepage.title,
     },
     {
       hid: "twitter:description",
       property: "twitter:description",
-      content: lang.value.seo.homepage.description,
+      content: $lang.seo.homepage.description,
     },
     {
       hid: "twitter:url",
@@ -129,12 +129,6 @@ useHead({
       href: origin + Route.path,
     },
   ],
-  // link: [
-  //   {
-  //     rel: "canonical",
-  //     href: `${variantConfig.siteOrigin}${useRoute().fullPath}`,
-  //   },
-  // ],
 });
 </script>
 
